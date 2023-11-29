@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <nav class="navbar sticky-top">
+      <div class="container">
+        <img src="iconos/logo.svg"></img>
+
+        <button type="button" class="btn pe-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="iconos/info.svg" class="white-text"></img>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="d-flex justify-content-center my-3">
+        <h2 class="titulo fw-bold">Lista de compras</h2>
+      </div>
+
+      <form>
+        <div class="d-flex flex-row">
+          <input type="text" class="form-control" id="item" placeholder="Agrega un item" required>
+          <button type="submit" class="btn pe-0">
+            <img src="iconos/agregar.svg"></img>
+          </button>
+      </div>
+      </form>
+
+      <ul class="list-unstyled list-group" id="lista">
+      </ul>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="d-flex flex-row-reverse">
+            <button type="button" class="btn-close m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <img height="124" width="124" src="imagenes/yo.png" class="rounded-circle"></img>
+            <h3 class="mt-2 titulo fw-bold text-break text-center">Camila Maria Rodriguez Vera</h3>
+            <p>Carrera: Diseño Multimedial</p>
+            <p>Materia: Diseño y Programación Web I</p>
+            <p>Comisión: DMM3BV</p>
+            <p>Turno: Mañana (virtual)</p>
+            <p>Año: 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
